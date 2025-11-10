@@ -307,7 +307,7 @@
 // };
 
 // // ============================================
-// // MARKETPLACE API - UPDATED & CORRECTED
+// // MARKETPLACE API - ✅ WITH EDIT FUNCTIONALITY
 // // ============================================
 
 // export const marketplaceAPI = {
@@ -344,7 +344,7 @@
 //     }
 //   },
 
-//   // Update item
+//   // ✅ UPDATE ITEM - NEW EDIT FUNCTIONALITY
 //   updateItem: async (itemId, itemData) => {
 //     try {
 //       const response = await api.put(`/items/${itemId}`, itemData);
@@ -646,10 +646,12 @@
 
 
 
+
+
 import axios from 'axios';
 
-// Base API URL
-const API_BASE_URL = 'http://localhost:5000/api';
+// Base API URL - uses environment variable or falls back to localhost
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 // Create axios instance
 const api = axios.create({
