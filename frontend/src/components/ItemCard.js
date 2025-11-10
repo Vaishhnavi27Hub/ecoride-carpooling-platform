@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiShoppingBag, FiMapPin, FiUser, FiStar, FiTag, FiClock } from 'react-icons/fi';
+import { FiShoppingBag, FiMapPin, FiTag, FiClock } from 'react-icons/fi';
 import Card from './Card';
 import Button from './Button';
 import Badge from './Badge';

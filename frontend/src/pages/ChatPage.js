@@ -33,12 +33,21 @@ const ChatPage = () => {
   }, []);
 
   // Handle automatic chat opening from URL parameter
-  useEffect(() => {
-    const userId = searchParams.get('userId');
-    if (userId && chats.length > 0 && !autoOpeningChat) {
-      handleAutoOpenChat(userId);
-    }
-  }, [searchParams, chats]);
+  // useEffect(() => {
+  //   const userId = searchParams.get('userId');
+  //   if (userId && chats.length > 0 && !autoOpeningChat) {
+  //     handleAutoOpenChat(userId);
+  //   }
+  // }, [searchParams, chats]);
+
+  // Handle automatic chat opening from URL parameter
+useEffect(() => {
+  const userId = searchParams.get('userId');
+  if (userId && chats.length > 0 && !autoOpeningChat) {
+    handleAutoOpenChat(userId);
+  }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [searchParams, chats]);
 
   const handleAutoOpenChat = async (targetUserId) => {
     try {

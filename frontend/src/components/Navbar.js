@@ -236,7 +236,7 @@ import {
   FiMenu,
   FiX,
 } from 'react-icons/fi';
-import { FaRobot } from 'react-icons/fa';
+// import { FaRobot } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
 import { chatAPI } from '../services/chatAPI';
 import { useSocket } from '../context/SocketContext';
